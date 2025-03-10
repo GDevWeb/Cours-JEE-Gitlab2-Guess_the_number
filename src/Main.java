@@ -15,12 +15,12 @@ public class Main {
         System.out.println("J'ai choissi " + guess + "."+ "Peux-tu le deviner?");
 
         while (guess != targetNumber) {
-            System.out.print("Entrez un nombre: (ou tapez 0 pour quitter)");
+            System.out.print("Entres un nombre: (ou tapes 0 pour quitter)");
             guess = scanner.nextInt();
             attempts++;
 
             if(guess == 0){
-                System.out.println("❌ Game over! Vous avez choissi de quitter la partie!");
+                System.out.println("❌ Game over! Tu as choissi de quitter la partie!");
                 break;
             }else if(guess < targetNumber){
                 System.out.println("⬆️ Trop bas! Essayes encore.");
